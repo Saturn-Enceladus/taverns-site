@@ -1,0 +1,216 @@
+body, html {
+    height: 100%;
+    margin: unset;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    --header-height: 142.438px;
+--trim-color: #8f5328;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+    background-image: url(https://i.redd.it/puhxbadwklub1.jpg);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: calc(var(--header-height) + 10px);
+    background-position: 30%;
+    background-size: cover;
+    margin: -10px;
+}
+.bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    height: var(--header-height);
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+    font-family: "Josefin Sans";
+    font-weight: 200;
+}
+.profile1-bg {
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/011/772/114/large/-vavilon-6.jpg?1531323331);
+    height: 100%;
+    background-size: cover;
+    filter: blur(8px);
+    transform: scale(102%);
+    background-attachment: fixed;
+}
+
+.profile1-cardbg {
+    background-image: url(https://i.redd.it/vp75fhbjzbub1.png);
+    background-position-x: center;
+    background-position-y: -26px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: darkslategrey;
+    height: inherit;
+    box-shadow: 10px 10px 20px 20px #0003;
+}
+
+.profile1-lowercard {
+    background-color: tan;
+    height: 70%;
+    width: calc(100% - 4em);
+    left: 2em;
+    bottom: 2em;
+    position: absolute;
+    box-shadow: 0px 0px 10px 5px #0008;
+    border-radius: 1em;
+}
+
+.profile1-avatar {
+    --avatar-size: 180px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+img.profile1-avatar-image {
+    position: relative;
+    border-radius: 50%;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile1-avatar-shadow {
+    position: absolute;
+    top: 0;
+    background: black;
+    border-radius: 50%;
+    filter: blur(10px);
+    z-index: 1;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    height: 80%;
+    width: 100%;
+    flex-direction: row;
+}
+
+.column {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+}
+
+img {
+    flex: 50%;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+.profiletext {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.aboutme {
+    flex: 60%;
+    background-color: var(--trim-color);
+    padding: 8px;
+    border-radius: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+}
+
+.status {
+    flex: 40%;
+    background-color: var(--trim-color);
+    padding: 8px;
+    border-radius: 16px;
+    display: flex;
+    box-shadow: 0 0 10px black;
+}
+
+.statustext {
+    flex: auto;
+    padding-left: 8px;
+}
+
+p {
+    margin-block: 8px;
+    font-family: 'Josefin Sans';
+}
+
+.socials {
+    position: relative;
+    display: flex;
+    width: 206px;
+    left: 0px;
+    justify-content: space-evenly;
+}
+
+img.stop {
+    position: relative;
+    top: -45px;
+    z-index: 3;
+    border-radius: 50%;
+    height: 100%;
+}
+
+img.sbot {
+    position: relative;
+    top: -8px;
+    z-index: 3;
+    margin: 0px 8px;
+    border-radius: 50%;
+    height: 100%;
+}
+
+img.profimgsq {
+    width: 100%;
+    outline: var(--trim-color) solid 4px;
+    padding: unset;
+    margin: 8px 0px;
+    box-shadow: 0 0 10px;
+}
+
+img.profimgcir {
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: var(--trim-color) solid 4px;
+    padding: unset;
+    margin: 12px 0px;
+    box-shadow: 0 0 10px;
+}
+.bg {
+    height: 152px;
+}
+
+.profile1-card {
+    height: 750px;
+    left: 50%;
+    top: 45rem;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 600px;
+}
